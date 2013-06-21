@@ -44,12 +44,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Newsbeatle</a>
+		  <a><%= image_tag("newsbeatle1.png", :size => "142x38", :align =>"left" )%></a>
           <div class="container nav-collapse">
+		  <div class="pull-right">
             <ul class="nav">
-              <li><%= link_to "Home", "index"  %></li>
-			   <li><%= link_to "Buyers", "buyers"  %></li>
-              <li><%= link_to "Sellers", "sellers"  %></li>
+			  <li><%= link_to("Home", {:controller => 'home', :action => 'index'}) %></li>
+			  <li><%= link_to("Buyers", {:controller => 'buyers', :action => 'index'}) %></li>
+              <li><%= link_to("Sellers", {:controller => 'Sellers', :action => 'index'}) %></li>
+			  <li><%= link_to("Register", {:controller => 'Register', :action => 'index'}) %></li>
+			  </div>
+			  </div>
+        </div></div>
+		
+		
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -65,7 +72,8 @@
         </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2013</p>
+	  <div class="span3">
+        <h6 style="color="#333333" >&copy; Newsbeatle 2013</h6></div>
       </footer>
 
     </div> <!-- /container -->

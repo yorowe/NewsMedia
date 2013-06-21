@@ -63,14 +63,16 @@
 
   <body>
 
-    
+       <div class="span11 text-align: center">
       <hr>
 
       <div class="jumbotron">
         <h1>Get the Scoop</h1>
 		<h3>News Media Distribution Network</h3>
-        <p class="lead">Where global news agencies source freelance journalists for breaking stories, photos and video content.</p>
-        <a class="btn btn-large btn-success" href="buyers">How to Buy</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a class="btn btn-large btn-success" href="sellers">How to Sell</a>
+        <p class="lead">Where global news agencies source freelance journalists for</br>breaking stories, photos and video content.</p>
+		<div class="row-fluid marketing">
+		<div class="span6"><a class="btn btn-large btn-success" <%= link_to("How to Buy Content", {:controller => 'buyers', :action => 'index'}) %></a></div>
+		<div class="span6"><a class="btn btn-large btn-success" <%= link_to("How to Sell Content", {:controller => 'sellers', :action => 'index'}) %></a></div></div>
       </div>
 
       <hr>
@@ -79,34 +81,30 @@
         <div class="span6">
           <h4>Twitter Alerts by Subject or Person</h4>
 		  
-          <p> President Obama, Aaron Rodgers, Taylor Swift... politics, sports or entertainment. Customize your alerts! Read more</p>
+          <p> <%= image_tag("tweets.jpg", :size => "50x37", :align =>"left" )%> President Obama, Aaron Rodgers, Taylor Swift... politics, sports or entertainment. Customize your alerts! Read more</p>
 
-          <h4>Exclusive or Crowdsourced</h4>
-          <p>It's your call. Buy and sell on the terms that work for you. orta ac consectetur ac, vestibulum at eros. Cras consectetur purus sit amet fermentum. Read more</p>
+          <h4>Exclusive or Common License</h4>
+          <p><%= image_tag("crowdsource.jpg", :size => "65x50", :align =>"left" )%>Make an offer to buy out the media rights for yourself or enjoy the great prices of shared usage.</p>
 
-          <h4>Commission Freelance Jouranlist</h4>
-          <p>Access the outstanding pool of global talent - photographers, videographers and writers. Read more</p>
+          <h4>Commission Freelance Jouranlists</h4>
+          <p><%= image_tag("uno.jpg", :size => "62x54", :align =>"left" )%> Access the outstanding pool of global talent - photographers, videographers and writers. Read more</p>
         </div>
 
         <div class="span6">
           <h4>Global and Local Politics</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <p> <%= image_tag("globe.jpg", :size => "63x52", :align =>"left" )%> Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
           <h4>Sports and Entertainment</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+          <p> <%= image_tag("sport.jpg", :size => "68x54", :align =>"left" )%>Morbi leo risus, porta consectetur, vestibulum at eros. Cras mattis purus sit amet fermentum.</p>
 
           <h4>Science and Nature</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <p> <%= image_tag("science.jpg", :size => "65x46c", :align =>"left" )%> Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
       </div>
 
       <hr>
 
-      <div class="footer">
-        <p>&copy; FrameScoop 2013</p>
-      </div>
-
-    </div> <!-- /container -->
+    </div> </div><!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
