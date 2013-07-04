@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
     <!-- Le styles -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
+	<script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+
+        <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
+		
       body {
-        padding-top: 20px;
+        padding-top: 40px;
         padding-bottom: 40px;
       }
 
@@ -62,7 +69,24 @@
   </head>
 
   <body>
-
+	<div class=container well">
+	    <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+    <div class="active item"><img src="slide-politics.jpg"></div>
+    <div class="item"><img src="slide-sports.jpg"></div>
+    <div class="item"><img src="slide-fashion.jpg"></div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+	</div>	
        <div class="span11 text-align: center">
       <hr>
 
@@ -73,8 +97,11 @@
 		<div class="row-fluid marketing">
 		<div class="span6"><a class="btn btn-large btn-success" <%= link_to("How to Buy Content", {:controller => 'buyers', :action => 'index'}) %></a></div>
 		<div class="span6"><a class="btn btn-large btn-success" <%= link_to("How to Sell Content", {:controller => 'sellers', :action => 'index'}) %></a></div></div>
-      </div>
 
+	  
+	  </div>
+
+	
       <hr>
 
       <div class="row-fluid marketing">

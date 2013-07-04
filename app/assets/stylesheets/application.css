@@ -12,5 +12,10 @@
  *= require_tree .
  */
 @import "bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 80px; }
 @import "bootstrap-responsive";
+
+$('.carousel').carousel({  
+  interval: 2000 // in milliseconds  
+})  
+- See more at: http://www.w3resource.com/twitter-bootstrap/carousel-tutorial.php#sthash.ilHXOvNX.dpuf
